@@ -1,40 +1,93 @@
 header {
-    display : flex; /* 좌우로 정렬 */
+    position: fixed;
+    top : 0; 
+    left : 0; right : 0; /* == width:100%;*/
+    background-color : white;
+    height : 65px;
+    border-bottom: 1px lightgray solid;
+    display : flex; /*내용물 좌우로 정렬*/
+    align-items: center;
 }
 
 #left {
     display : flex; 
     justify-content: flex-start; /*좌측정렬*/
+    margin : 0px 170px; /*경계 바깥 여백 : 상하 좌우*/
     width : 50%;
 }
 #right {   
     display : flex; 
     justify-content: flex-end; /*우측정렬*/
     justify-content: space-around; /*여백추가*/
+    align-items: center; /*상하로 중앙 정렬*/
+    /* flex-basis: 700px; /*기본 크기 설정 */
+    margin : 0px 170px; /*경계 바깥 여백 : 상하 좌우*/
     width : 50%;
-    
-}
-
-#floatingbanner {
-    position : fixed; /*플로팅 배너 위치 고정*/
-    height : 150px;
-    width : 100px;
-    top : 400px;
-    left : 10px;
-}
-
-#imgbanner {
-    width : 40%;
-    height: 150px;
+    height : 50px;
 }
 
 section {
-    display : block; /*상하로 정렬*/
-    text-align: center;
+    display : block; /*내용물 상하로 정렬*/
+    text-align: center; /*중앙 정렬*/
+    margin : 0px 100px;
 }
 
-#title {
+.title {
+    margin: 60px 0px 0px 0px; /*위 오 아 왼*/
     font-size: 20pt;
     font-weight: bold;
 }
 
+.eventbanner {
+    margin: 90px 0px 0px 0px; /*위 오 아 왼*/
+    height: 170px;
+}
+
+
+#countrybox {
+    display : block;
+    margin : 20px 50px; /*경계 바깥 여백 : 상하 좌우*/
+    border-width : 1px;
+    border-color : lightgray;
+    border-style : solid;
+}
+.countrylist {
+    display : flex;
+    justify-content: center; /*가로 중앙 정렬*/
+    align-items: center; /*세로 중앙 정렬*/
+}
+.country {
+    display : flex;
+    justify-content: center; /*가로 중앙 정렬*/
+    align-items: center; /*세로 중앙 정렬*/
+    padding : 15px 30px; /*경계 안쪽 여백 : 상하 좌우*/
+}
+
+#gridcontainer {
+    display: grid;
+    margin : 20px 40px; /*경계 바깥 여백 : 상하 좌우*/
+    grid-template-rows: 50px 510px;
+    grid-template-columns: 410px 410px 410px;
+    justify-items: center; /*가로 중앙 정렬*/
+}
+
+#floatingbanner {
+    position : fixed; /*플로팅 배너 위치 고정*/
+    top : 380px; left : 10px;
+    height : 170px; width : 100px;
+    border-radius: 3px;
+}
+
+footer {
+    left : 0; right : 0; /* == width:100%;*/
+    background-color : white;
+    height : 400px;
+    border-top: 5px lightgray solid;
+    display : flex; /*내용물 좌우로 정렬*/
+    justify-content: center; /*가로 중앙 정렬*/
+}
+
+.service {
+    margin : 50px 50px;
+
+}

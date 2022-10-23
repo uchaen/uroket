@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--HTML버전이 무엇인지 브라우저에 알려주는 선언문-->
 
 <html>
     <head>
@@ -21,44 +21,65 @@
                 <div>이벤트</div>
                 <div>로그인</div>
                 <div>회원가입</div>
-            </div>
-            
+            </div>            
         </header>
 
         <div>
-            <img  id="floatingbanner" src="img1.jpg" alt="배너메롱">
+            <img id="floatingbanner" src="img1.jpg" alt="배너메롱">
         </div>
 
         <section>
-            <img  id="imgbanner" src="img1.jpg" alt="메1롱">
-            <img  id="imgbanner" src="img2.jpg" alt="메2롱">
+            <img class="eventbanner" style="width : 550px;" src="img1.jpg" alt="메1롱">
+            <img class="eventbanner" style="width : 650px;"src="img2.jpg" alt="메2롱">
         </section>
 
         <section>
-            <div id="title">전세계상품</div>
+            <div class="title">전세계상품</div>
             <div>세계 각국의 셀러들이 직접 판매하는 상품들이에요~!</div>
+            <div id="countrybox">
+                <div class="countrylist">
+                    <div class="country">전체</div> <div class="country">미국</div> <div class="country">캐나다</div> <div class="country">영국</div> 
+                    <div class="country">호주</div> <div class="country">대만</div> <div class="country">이탈리아</div> <div class="country">프랑스</div> 
+                    <div class="country">싱가포르</div> <div class="country">태국</div>          
+                </div>
+                <div class="countrylist">
+                    <div class="country">뉴질랜드</div> <div class="country">베트남</div> <div class="country">스페인</div> <div class="country">홍콩</div> 
+                    <div class="country">중국</div> <div class="country">독일</div> <div class="country">말레이시아</div> <div class="country">일본</div> 
+                    <div class="country">네덜란드</div>
+                </div>
+            </div>
         </section>
 
         <section>
-            <div id="title">베스트</div>
+            <div class="title">베스트</div>
+
         </section>
 
         <section>
-            <div id="title">크로켓과 더 친해지는 방법~?</div>
+            <div class="title">크로켓과 더 친해지는 방법~?</div>
             <div>크로켓 콘텐츠 구독하고 핫한 해외 상품들 빠르게 겟해보세요!</div>
+            <div id="gridcontainer">
+                <img style="height:40px;" src="https://www.croket.co.kr/asset/sns-icon/black-logo-facebook.png" alt="페이스북">
+                <img style="height:40px;" src="https://www.croket.co.kr/asset/sns-icon/black-logo-youtube.png" alt="유튜브">
+                <img style="height:40px;" src="https://www.croket.co.kr/asset/sns-icon/black-logo-naverblog.png" alt="블로그">
+                <iframe style="border-top: 5px blue solid;" width="400" height="500" src="https://www.facebook.com/croket.official/" title="Facebook" frameborder="0" allowfullscreen></iframe>
+                <iframe style="border-top: 5px red solid;"width="400" height="500" src="https://www.youtube.com/embed/fzSzAtR9FrQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe style="border-top: 5px green solid;"width="400" height="500" src="https://m.blog.naver.com/letsyeogoo" title="Naver blog" frameborder="0" allowfullscreen></iframe>
+            </div>
         </section>
 
         <section>
-            <div id="title">셀러</div>
+            <div class="title">셀러</div>
             <div>지금 잘나가는 셀러의 판매중인 상품이 궁금하다면?</div>
         </section>
 
         <section>
-            <div id="title">구매자 상품 리뷰</div>
+            <div class="title">구매자 상품 리뷰</div>
         </section>
 
         <footer>
-            이용약관
+            <div class="service">이용약관</div> <div class="service">개인정보취급방침</div> <div class="service">회사소개</div> <div class="service">운영정책</div> 
+            <div class="service">이용방법</div> <div class="service">공지사항</div> <div class="service">이벤트</div> <div class="service">FAQ</div>
         </footer>
     </body>
 </html>
