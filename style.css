@@ -1,0 +1,40 @@
+header {
+    display : flex; /* 좌우로 정렬 */
+}
+
+#left {
+    display : flex; 
+    justify-content: flex-start; /*좌측정렬*/
+    width : 50%;
+}
+#right {   
+    display : flex; 
+    justify-content: flex-end; /*우측정렬*/
+    justify-content: space-around; /*여백추가*/
+    width : 50%;
+    
+}
+
+#floatingbanner {
+    position : fixed; /*플로팅 배너 위치 고정*/
+    height : 150px;
+    width : 100px;
+    top : 400px;
+    left : 10px;
+}
+
+#imgbanner {
+    width : 40%;
+    height: 150px;
+}
+
+section {
+    display : block; /*상하로 정렬*/
+    text-align: center;
+}
+
+#title {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
