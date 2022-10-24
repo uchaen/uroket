@@ -1,85 +1,212 @@
 <!DOCTYPE html> <!--HTML버전이 무엇인지 브라우저에 알려주는 선언문-->
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>유로켓 - 전세계 커넥팅 쇼핑</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <div id="left">
-                <a href = "index.html">uroket</a>
-        
-                <input type="text" placeholder="해외상품을 검색해보세요!">
-                <button>검색</button>
-            </div>            
 
-            <div id="right">
-                <div>전세계상품</div>
-                <div>셀러이신가요?</div>
-                <div>이벤트</div>
-                <div>로그인</div>
-                <div>회원가입</div>
-            </div>            
-        </header>
+<head>
+    <meta charset="utf-8" />
+    <title>유로켓 - 전세계 커넥팅 쇼핑</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
 
-        <div>
-            <img id="floatingbanner" src="img1.jpg" alt="배너메롱">
+<body>
+    <header>
+        <div id="left">
+            <a href="index.html"><img src="uroket-logo.jpg" style="height: 25px" alt="로고" /></a>
+            <div id="searchbar">
+                <input type="text" id="searchinput" placeholder="해외상품을 검색해보세요!" />
+                <img id="searchbtn" src="https://croket.s3.ap-northeast-2.amazonaws.com/icon/layout/search+1.png" />
+            </div>
+
         </div>
 
-        <section>
-            <img class="eventbanner" style="width : 550px;" src="img1.jpg" alt="메1롱">
-            <img class="eventbanner" style="width : 650px;"src="img2.jpg" alt="메2롱">
-        </section>
+        <div id="right">
+            <div>전세계상품</div>
+            <div>셀러이신가요?</div>
+            <div>이벤트</div>
+            <a href="login.html">로그인</a>
+            <a href="ready_to_signup.html">회원가입</a>
+        </div>
+    </header>
 
-        <section>
-            <div class="title">전세계상품</div>
-            <div>세계 각국의 셀러들이 직접 판매하는 상품들이에요~!</div>
-            <div id="countrybox">
-                <div class="countrylist">
-                    <div class="country">전체</div> <div class="country">미국</div> <div class="country">캐나다</div> <div class="country">영국</div> 
-                    <div class="country">호주</div> <div class="country">대만</div> <div class="country">이탈리아</div> <div class="country">프랑스</div> 
-                    <div class="country">싱가포르</div> <div class="country">태국</div>          
+    <div>
+        <img id="floatingbanner" src="img1.jpg" alt="플로팅배너" />
+    </div>
+
+    <section>
+        <img class="eventbanner" style="width: 550px" src="img1.jpg" alt="이벤트배너" />
+        <img class="eventbanner" style="width: 650px" src="img2.jpg" alt="롤링배너" />
+    </section>
+
+    <section>
+        <div class="title">전세계상품</div>
+        <div>세계 각국의 셀러들이 직접 판매하는 상품들이에요~!</div>
+        <div id="countrybox">
+            <div class="flexlist">
+                <div class="country">
+                    <img src="https://www.croket.co.kr/asset/category/earth.png" style="width: 20px" />전체
                 </div>
-                <div class="countrylist">
-                    <div class="country">뉴질랜드</div> <div class="country">베트남</div> <div class="country">스페인</div> <div class="country">홍콩</div> 
-                    <div class="country">중국</div> <div class="country">독일</div> <div class="country">말레이시아</div> <div class="country">일본</div> 
-                    <div class="country">네덜란드</div>
+                <div class="country">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/icon/nation/mini/u_s.png"
+                        style="width: 20px" />미국
+                </div>
+                <div class="country">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/icon/nation/mini/canada.png"
+                        style="width: 20px" />캐나다
+                </div>
+                <div class="country">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/icon/nation/mini/u_k.png"
+                        style="width: 20px" />영국
+                </div>
+                <div class="country">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/icon/nation/mini/australia.png"
+                        style="width: 20px" />호주
+                </div>
+                <div class="country">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/icon/nation/mini/t_w.png"
+                        style="width: 20px" />대만
+                </div>
+                <div class="country">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/icon/nation/mini/italy.png"
+                        style="width: 20px" />이탈리아
+                </div>
+                <div class="country">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/icon/nation/mini/france.png"
+                        style="width: 20px" />프랑스
+                </div>
+                <div class="country">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/icon/nation/mini/s_g.png"
+                        style="width: 20px" />싱가포르
+                </div>
+                <div class="country">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/icon/nation/mini/t_h.png"
+                        style="width: 20px" />태국
                 </div>
             </div>
-        </section>
-
-        <section>
-            <div class="title">베스트</div>
-
-        </section>
-
-        <section>
-            <div class="title">크로켓과 더 친해지는 방법~?</div>
-            <div>크로켓 콘텐츠 구독하고 핫한 해외 상품들 빠르게 겟해보세요!</div>
-            <div id="gridcontainer">
-                <img style="height:40px;" src="https://www.croket.co.kr/asset/sns-icon/black-logo-facebook.png" alt="페이스북">
-                <img style="height:40px;" src="https://www.croket.co.kr/asset/sns-icon/black-logo-youtube.png" alt="유튜브">
-                <img style="height:40px;" src="https://www.croket.co.kr/asset/sns-icon/black-logo-naverblog.png" alt="블로그">
-                <iframe style="border-top: 5px blue solid;" width="400" height="500" src="https://www.facebook.com/croket.official/" title="Facebook" frameborder="0" allowfullscreen></iframe>
-                <iframe style="border-top: 5px red solid;"width="400" height="500" src="https://www.youtube.com/embed/fzSzAtR9FrQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe style="border-top: 5px green solid;"width="400" height="500" src="https://m.blog.naver.com/letsyeogoo" title="Naver blog" frameborder="0" allowfullscreen></iframe>
+            <div class="flexlist">
+                <div class="country">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/icon/nation/mini/n_z.png"
+                        style="width: 20px" />뉴질랜드
+                </div>
+                <div class="country">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/icon/nation/mini/v_n.png"
+                        style="width: 20px" />베트남
+                </div>
+                <div class="country">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/icon/nation/mini/s_p.png"
+                        style="width: 20px" />스페인
+                </div>
+                <div class="country">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/icon/nation/mini/h_k.png"
+                        style="width: 20px" />홍콩
+                </div>
+                <div class="country">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/icon/nation/mini/c_n.png"
+                        style="width: 20px" />중국
+                </div>
+                <div class="country">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/icon/nation/mini/germany.png"
+                        style="width: 20px" />독일
+                </div>
+                <div class="country">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/icon/nation/mini/m_y.png"
+                        style="width: 20px" />말레이시아
+                </div>
+                <div class="country">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/icon/nation/mini/j_p.png"
+                        style="width: 20px" />일본
+                </div>
+                <div class="country">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/icon/nation/mini/netherlands.png"
+                        style="width: 20px" />네덜란드
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section>
-            <div class="title">셀러</div>
-            <div>지금 잘나가는 셀러의 판매중인 상품이 궁금하다면?</div>
-        </section>
+    <section>
+        <div class="title">베스트</div>
+    </section>
 
-        <section>
-            <div class="title">구매자 상품 리뷰</div>
-        </section>
+    <section>
+        <div class="title">유로켓과 더 친해지는 방법~?</div>
+        <div>유로켓 콘텐츠 구독하고 핫한 해외 상품들 빠르게 겟해보세요!</div>
+        <div id="gridcontainer">
+            <img style="height: 40px" src="https://www.croket.co.kr/asset/sns-icon/black-logo-facebook.png"
+                alt="페이스북" />
+            <img style="height: 40px" src="https://www.croket.co.kr/asset/sns-icon/black-logo-youtube.png" alt="유튜브" />
+            <img style="height: 40px" src="https://www.croket.co.kr/asset/sns-icon/black-logo-naverblog.png"
+                alt="블로그" />
+            <iframe style="border-top: 5px blue solid" width="400" height="500"
+                src="https://www.facebook.com/croket.official/" title="Facebook" frameborder="0"
+                allowfullscreen></iframe>
+            <iframe style="border-top: 5px red solid" width="400" height="500"
+                src="https://www.youtube.com/embed/fzSzAtR9FrQ" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe style="border-top: 5px green solid" width="400" height="500"
+                src="https://m.blog.naver.com/letsyeogoo" title="Naver blog" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
 
-        <footer>
-            <div class="service">이용약관</div> <div class="service">개인정보취급방침</div> <div class="service">회사소개</div> <div class="service">운영정책</div> 
-            <div class="service">이용방법</div> <div class="service">공지사항</div> <div class="service">이벤트</div> <div class="service">FAQ</div>
-        </footer>
-    </body>
+    <section>
+        <div class="title">셀러</div>
+        <div>지금 잘나가는 셀러의 판매중인 상품이 궁금하다면?</div>
+    </section>
+
+    <section>
+        <div class="title">구매자 상품 리뷰</div>
+    </section>
+
+    <footer id="footer1">
+        <div class="flexlist">
+            <div class="service">이용약관</div>
+            <div class="service" style="font-weight: bold;">개인정보취급방침</div>
+            <div class="service">회사소개</div>
+            <div class="service">운영정책</div>
+            <div class="service">이용방법</div>
+            <div class="service">공지사항</div>
+            <div class="service">이벤트</div>
+            <div class="service">FAQ</div>
+        </div>
+        <div class="flexlist">
+            <div>
+                <p>(주)와이오엘오 | 대표 황유미</p>
+                <p>사업자등록번호 610-86-34204 | 통신판매번호 2019-서울마포-1239 | 호스팅 (주)와이오엘오</p>
+                <p>070-8676-8799 (발신 전용) 사업자 정보 확인 ></p>
+                <p>고객 문의: 우측 고객센터 / 이메일 / 카카오플러스 채널을 통해 문의 접수 부탁드립니다.</p>
+                <p>(정확한 상담 기록을 위해 유선상 문의는 접수받고 있지 않습니다)</p>
+                <p>주소 [04004] 서울특별시 마포구 월드컵로10길 5-6</p>
+            </div>
+            <div>
+                <p>고객센터</p>
+                <p>평일 오전 11시 ~ 오후 6시 (주말, 공휴일 제외)</p>
+                <p>E-mail : info@croket.co.kr</p>
+                <p>
+                    <button>유로켓 고객센터 문의</button>
+                    <button>FAQ</button>
+                </p>
+            </div>
+            <div>
+                <img style="height:25px; margin: 0 20px 0 0;" src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/footer/logo%20copy_45.png" alt="특허청" />
+                <img style="height:25px" src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/footer/nicepay_128.png" alt="나이스페이" />
+                <img style="height:25px" src="https://croket.s3.ap-northeast-2.amazonaws.com/img/tosspayments.png" alt="토스페이" />
+                <div style="font-size:10px; margin: 15px 0">특허출원번호 제 10-1865905호  상표등록번호 제 40-1643898호</div>
+                <img style="height:25px" src="https://croket.s3.ap-northeast-2.amazonaws.com/button/appstore.png" alt="앱스토어" />
+                <img style="height:25px; margin: 0 20px 0 0;" src="https://croket.s3.ap-northeast-2.amazonaws.com/button/googleplay.png" alt="플레이스토어" />
+                <img style="height:25px" src="https://croket.s3.ap-northeast-2.amazonaws.com/button/InstagramLogo.png" alt="인스타" />
+                <img style="height:25px" src="https://croket.s3.ap-northeast-2.amazonaws.com/button/FacebookLogo.png" alt="페북" />
+                <img style="height:25px" src="https://croket.s3.ap-northeast-2.amazonaws.com/button/Naverblog.png" alt="블로그" />
+            </div>
+        </div>
+    </footer>
+    <footer id="footer2">
+        <div style="margin: 30px 0 0 100px;">
+            <p>(주)와이오엘오의 사전 서면 동의 없이 크로켓 사이트의 일체의 정보, 콘텐츠 및 UI등을 상업적 목적으로 전재, 전송, 스크래핑 등 무단 사용할 수 없습니다.</p>
+            <p>크로켓은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 크로켓은 상품·거래정보 및 거래에 대하여 책임을 지지 않습니다.</p>
+            <p>구매안전서비스확인증</p>
+            <p>Copyright© 2017-2022 YOLO Co, Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
 </html>
