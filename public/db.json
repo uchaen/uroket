@@ -1,9 +1,22 @@
 {
-    "users": [
-      {
-        "id": "aa",
-        "password": "aa",
-        "name": "유저이름"
-      }
-    ]
-  }
+  "users": [
+    {
+      "email": "aa@aa.aa",
+      "password": "$2a$10$ZQaB8ccb9gdiQyWwtT5R4eYQKMzPvkyPDCH9fB8DtbvNXRMDVzMXi",
+      "user_name": "aa",
+      "id": 1
+    },
+    {
+      "email": "bb@bb.bb",
+      "password": "$2a$10$txWlTJ7qNuCkpPpJVmHltu8zbMY8FJdggc/rfE1dRsFvs9RfWOoOm",
+      "user_name": "bb",
+      "id": 2
+    },
+    {
+      "email": "cc@cc.cc",
+      "password": "$2a$10$fqQG4XK4TosX0qIp5XEz6OwuGrmR12aWRIXrz/.rw3n2wvXQ.2NZa",
+      "user_name": "cc",
+      "id": 3
+    }
+  ]
+}

@@ -15,13 +15,13 @@ class Header extends Component {
                     </div>
 
                     <div id="right">
-                        <div class="dropdown">전세계상품</div>
-                        <div>|</div>
-                        <div class="dropdown">셀러이신가요?</div>
-                        <div>|</div>
-                        <div class="dropdown">이벤트</div>
-                        <Link to="/login" class="dropdown" style={{color:"blueviolet"}}>로그인</Link>
-                        <Link to="/ready_to_signup" class="dropdown" style={{color:"blueviolet"}}>회원가입</Link>
+                        <div className="dropdown">전세계상품</div>
+                        <div>ㅣ</div>
+                        <div className="dropdown">셀러이신가요?</div>
+                        <div>ㅣ</div>
+                        <div className="dropdown">이벤트</div>
+                        <Link to="/login" className="dropdown" style={{color:"blueviolet"}}>로그인</Link>
+                        <Link to="/ready_to_signup" className="dropdown" style={{color:"blueviolet"}}>회원가입</Link>
                     </div>
                 </header>
             </div>

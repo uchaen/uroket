@@ -16,11 +16,11 @@ class ReadyToSignup extends Component {
                         소셜 계정으로 유로켓 이용하기
                     </div>
 
-                    <div class="flexlist">
-                        <img class="snsbtn" src="https://croket.s3.ap-northeast-2.amazonaws.com/icon/auth_kakaotalk.png" alt="카카오톡"/>
-                        <img class="snsbtn" src="https://croket.s3.ap-northeast-2.amazonaws.com/icon/auth_naver.png" alt="네이버"/>
-                        <img class="snsbtn" src="https://croket.s3.ap-northeast-2.amazonaws.com/icon/auth_facebook.png" alt="페이스북"/>
-                        <img class="snsbtn" src="https://croket.s3.ap-northeast-2.amazonaws.com/icon/auth_appleid.png" alt="애플" />
+                    <div className="flexlist">
+                        <img className="snsbtn" src="https://croket.s3.ap-northeast-2.amazonaws.com/icon/auth_kakaotalk.png" alt="카카오톡"/>
+                        <img className="snsbtn" src="https://croket.s3.ap-northeast-2.amazonaws.com/icon/auth_naver.png" alt="네이버"/>
+                        <img className="snsbtn" src="https://croket.s3.ap-northeast-2.amazonaws.com/icon/auth_facebook.png" alt="페이스북"/>
+                        <img className="snsbtn" src="https://croket.s3.ap-northeast-2.amazonaws.com/icon/auth_appleid.png" alt="애플" />
                     </div>
 
                     <div id="font17" style={{ margin: "30px 0 0 0"}}>

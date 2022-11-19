@@ -15,17 +15,17 @@ class Footer1 extends Component {
     render() {
       return (
           <footer id="footer1">
-            <div class="flexlist">
-                <div class="service">이용약관</div>
-                <div class="service" style={{fontweight: 'bold'}}>개인정보취급방침</div>
-                <div class="service">회사소개</div>
-                <div class="service">운영정책</div>
-                <div class="service">이용방법</div>
-                <div class="service">공지사항</div>
-                <div class="service">이벤트</div>
-                <div class="service">FAQ</div>
+            <div className="flexlist">
+                <div className="service">이용약관</div>
+                <div className="service" style={{fontweight: 'bold'}}>개인정보취급방침</div>
+                <div className="service">회사소개</div>
+                <div className="service">운영정책</div>
+                <div className="service">이용방법</div>
+                <div className="service">공지사항</div>
+                <div className="service">이벤트</div>
+                <div className="service">FAQ</div>
             </div>
-            <div class="flexlist">
+            <div className="flexlist">
                 <div>
                     <p>(주)와이오엘오 | 대표 황유미</p>
                     <p>사업자등록번호 610-86-34204 | 통신판매번호 2019-서울마포-1239 | 호스팅 (주)와이오엘오</p>
@@ -44,15 +44,15 @@ class Footer1 extends Component {
                     </p>
                 </div>
                 <div>
-                    <img class="footerimg" style={{margin: "0 20px 0 0"}} src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/footer/logo%20copy_45.png" alt="특허청" />
-                    <img class="footerimg" src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/footer/nicepay_128.png" alt="나이스페이" />
-                    <img class="footerimg" src="https://croket.s3.ap-northeast-2.amazonaws.com/img/tosspayments.png" alt="토스페이" />
-                    <div class="footerimg" style={{margin: "0 15px 0 0"}}>특허출원번호 제 10-1865905호  상표등록번호 제 40-1643898호</div>
-                    <img class="footerimg" src="https://croket.s3.ap-northeast-2.amazonaws.com/button/appstore.png" alt="앱스토어" />
-                    <img class="footerimg" style={{margin: "0 20px 0 0"}} src="https://croket.s3.ap-northeast-2.amazonaws.com/button/googleplay.png" alt="플레이스토어" />
-                    <img class="footerimg" src="https://croket.s3.ap-northeast-2.amazonaws.com/button/InstagramLogo.png" alt="인스타" />
-                    <img class="footerimg" src="https://croket.s3.ap-northeast-2.amazonaws.com/button/FacebookLogo.png" alt="페북" />
-                    <img class="footerimg" src="https://croket.s3.ap-northeast-2.amazonaws.com/button/Naverblog.png" alt="블로그" />
+                    <img className="footerimg" style={{margin: "0 20px 0 0"}} src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/footer/logo%20copy_45.png" alt="특허청" />
+                    <img className="footerimg" src="https://s3.ap-northeast-2.amazonaws.com/yeogoolocal/footer/nicepay_128.png" alt="나이스페이" />
+                    <img className="footerimg" src="https://croket.s3.ap-northeast-2.amazonaws.com/img/tosspayments.png" alt="토스페이" />
+                    <div className="footerimg" style={{margin: "0 15px 0 0"}}>특허출원번호 제 10-1865905호  상표등록번호 제 40-1643898호</div>
+                    <img className="footerimg" src="https://croket.s3.ap-northeast-2.amazonaws.com/button/appstore.png" alt="앱스토어" />
+                    <img className="footerimg" style={{margin: "0 20px 0 0"}} src="https://croket.s3.ap-northeast-2.amazonaws.com/button/googleplay.png" alt="플레이스토어" />
+                    <img className="footerimg" src="https://croket.s3.ap-northeast-2.amazonaws.com/button/InstagramLogo.png" alt="인스타" />
+                    <img className="footerimg" src="https://croket.s3.ap-northeast-2.amazonaws.com/button/FacebookLogo.png" alt="페북" />
+                    <img className="footerimg" src="https://croket.s3.ap-northeast-2.amazonaws.com/button/Naverblog.png" alt="블로그" />
                 </div>
             </div>
         </footer>
