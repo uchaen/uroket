@@ -10,10 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header/>
-
-
         <TOC />
-
         <div>
           <img id="floatingbanner" src="assets/img1.jpg" alt="플로팅배너" />
         </div>

@@ -8,14 +8,18 @@ class Login extends Component {
         this.setState({ [name]: value });
     };
 
-    signin = () => {
+    inputKeyPress = (e) => {   //엔터키 입력 시 inputKeyPress 함수를 호출 
+        if (e.key === 'Enter') this.login(); // keyPress 이벤트로 입력된 key가 엔터 -> 로그인
+    };
+
+    login = () => {
         const { id, pw } = this.state;
         if (id && pw) {
             fetch('http://localhost:3001/login', {
                 method: 'POST',
-                headers : {
-                    'Content-Type' : 'application/json',
-                    'Accept' : 'application/json',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
                 },
                 body: JSON.stringify({
                     email: id,
@@ -25,10 +29,9 @@ class Login extends Component {
                 .then((response) => response.json()) //(1)첫번째 then에서 server에서 보내준 response를 object 형태로 변환한다.
                 .then((res) => { //(2)두번째 then에서는 object로 변환한 response를 확인한다.   
                     if (res.accessToken) { //(3)로그인이 성공하면 백엔드에서 토큰을 준다.
-                        localStorage.setItem('token', '${res.accessToken}'); //(4)`token`과 `user_name`을 로컬 스토리지에 저장한다.
-                        localStorage.setItem('user_name', '${res.user_name}');
-                        alert('로그인 성공!')
-                        document.location.href='/' // useNavigate("/");
+                        window.localStorage.setItem('accessToken', res.accessToken); //accessToken과 user_name을 로컬 스토리지에 저장
+                        window.localStorage.setItem('user_name', res.user.user_name);
+                        document.location.href = '/'  // useNavigate("/");
                     } else {
                         alert('아이디 혹은 비밀번호가 틀렸습니다.');
                     }
@@ -47,13 +50,13 @@ class Login extends Component {
                 <section>
                     <p id="font28">로그인</p>
                     <div>
-                        <input className="idpw" name="id" type="text" onChange={this.setLoginData} placeholder="이메일" />
+                        <input className="idpw" name="id" type="text" onChange={this.setLoginData} onKeyPress={this.inputKeyPress} placeholder="이메일" />
                     </div>
                     <div>
-                        <input className="idpw" name="pw" type="password" onChange={this.setLoginData} placeholder="비밀번호" />
+                        <input className="idpw" name="pw" type="password" onChange={this.setLoginData} onKeyPress={this.inputKeyPress} placeholder="비밀번호" />
                     </div>
 
-                    <button id="purplebtn" onClick={this.signin}>로그인</button>
+                    <button id="purplebtn" onClick={this.login}>로그인</button>
 
                     <div id="font14" style={{ margin: "20px 0 10px 0" }}>
                         소셜 계정으로 유로켓 이용하기

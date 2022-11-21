@@ -25,10 +25,9 @@ class Signup extends Component {
             })
                 .then((response) => response.json()) //(1)첫번째 then에서 server에서 보내준 response를 object 형태로 변환한다.
                 .then((res) => { //(2)두번째 then에서는 object로 변환한 response를 확인한다.   
-                    if (res.accessToken) { //(3)로그인이 성공하면 백엔드에서 토큰을 준다.
-                        // localStorage.setItem('token', '${res.accessToken}'); //(4)`token`과 `user_name`을 로컬 스토리지에 저장한다.
-                        // localStorage.setItem('user_name', '${res.user_name}');
-                        alert('회원가입 성공!')
+                    if (res.accessToken) { //(3)회원가입이 성공하면 백엔드에서 토큰을 준다.
+                        window.localStorage.setItem('accessToken', res.accessToken); //accessToken과 user_name을 로컬 스토리지에 저장
+                        window.localStorage.setItem('user_name', res.user.user_name);
                         document.location.href='/' // useNavigate("/");
                     } else {
                         alert(res); // Email already exists & Password is too short

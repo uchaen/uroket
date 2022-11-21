@@ -21,22 +21,33 @@ header {
 #right {
   display: flex;
   justify-content: flex-end; /*우측정렬*/
-  justify-content: space-around; /*여백추가*/
+  justify-content: space-around; /* 여백추가 */
   align-items: center; /*상하로 중앙 정렬*/
   margin: 0 170px 0 70px; /*경계 바깥 여백 : 위 오 아 왼 */
   width: 100%;
   height: 50px;
 }
 
-.dropdown {
-  margin: 0 10px;
+.bigUnderbar {
+  margin : 0 10px;
   padding: 19px 0;
   cursor: pointer; /*마우스 올리면 손가락으로 변하게*/
 }
-.dropdown:hover {
+.bigUnderbar:hover {
   padding-top : 23px;
-  border-bottom: 4px blueviolet solid;
+  border-bottom: 3.5px blueviolet solid;
 }
+.miniUnderbar {
+  height: 30px;
+  margin : 0 5px;
+  padding: 15px 0;
+  cursor: pointer; /*마우스 올리면 손가락으로 변하게*/
+}
+.miniUnderbar:hover {
+  padding-top : 23px;
+  border-bottom: 3px blueviolet solid;
+}
+
 
 section {
   display: block; /*내용물 상하로 정렬*/

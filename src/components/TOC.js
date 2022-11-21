@@ -140,14 +140,14 @@ class Iframe extends Component {
                     <img style={{ height: "40px" }} src="https://www.croket.co.kr/asset/sns-icon/black-logo-naverblog.png"
                         alt="블로그" />
                     <iframe className="snsiframe" style={{ borderTopColor: 'blue' }}
-                        src="https://www.facebook.com/croket.official/" title="Facebook" frameborder="0"
-                        allowfullscreen></iframe>
+                        src="https://www.facebook.com/croket.official/" title="Facebook" frameBorder="0"
+                        allowFullScreen></iframe>
                     <iframe className="snsiframe" style={{ borderTopColor: 'red' }}
-                        src="https://www.youtube.com/embed/fzSzAtR9FrQ" title="YouTube video player" frameborder="0"
+                        src="https://www.youtube.com/embed/fzSzAtR9FrQ" title="YouTube video player" frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                        allowFullScreen></iframe>
                     <iframe className="snsiframe" style={{ borderTopColor: 'green' }}
-                        src="https://m.blog.naver.com/letsyeogoo" title="Naver blog" frameborder="0" allowfullscreen></iframe>
+                        src="https://m.blog.naver.com/letsyeogoo" title="Naver blog" frameBorder="0" allowFullScreen></iframe>
                 </div>
             </section>
         );
