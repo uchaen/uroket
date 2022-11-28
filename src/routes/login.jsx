@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import '../login_signup.css';
+import '../css/login_signup.css';
 
 class Login extends Component {
     setLoginData = (e) => {

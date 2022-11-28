@@ -1,0 +1,131 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  height: 65px;
+  border-bottom: 1px lightgray solid;
+  display: flex; /*내용물 좌우로 정렬*/
+  align-items: center;
+}
+
+#left {
+  display: flex;
+  justify-content: flex-start; /*좌측정렬*/
+  align-items: center; /*상하로 중앙 정렬*/
+  margin: 0 0 0 170px; /*경계 바깥 여백 : 위 오 아 왼*/
+}
+#middle {
+  display: flex;
+  align-items: center; /*상하로 중앙 정렬*/
+  margin: 0 50px 0 320px; /*경계 바깥 여백 : 위 오 아 왼*/
+}
+#right {
+  display: flex;
+  justify-content: flex-end; /*우측정렬*/
+  align-items: center; /*상하로 중앙 정렬*/
+  margin: 0 170px 0 0; /*경계 바깥 여백 : 위 오 아 왼 */
+}
+
+
+#searchbar {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  margin: 0 0 0 20px;
+  width: 250px;
+  height: 40px;
+}
+#searchinput {
+  background-color: #f6f6f6;
+  margin: 0 15px 0 0;
+  width: 180px;
+  border-style: none;
+  font-size: 11px;
+}
+#searchinput:focus {
+  outline: none;
+}
+#searchbtn {
+  width: 20px;
+  height: 20px;
+}
+
+
+.bigUnderbar {
+  margin : 0 10px;
+  padding: 18px 0;
+  cursor: pointer; /*마우스 올리면 손가락으로 변하게*/
+}
+.bigUnderbar:hover {
+  padding-top : 22px;
+  border-bottom: 3.5px blueviolet solid;
+}
+.miniUnderbar {
+  height: 30px;
+  margin : 0 5px;
+  padding: 15px 0;
+  cursor: pointer; /*마우스 올리면 손가락으로 변하게*/
+}
+.miniUnderbar:hover {
+  padding-top : 18px;
+  border-bottom: 3px blueviolet solid;
+}
+
+
+.dropdown-menu{
+  display : none;
+  overflow: hidden;
+  /* transform: translateY(-300px); */
+  position : fixed;
+  top: 66px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+}
+.bigUnderbar:hover .dropdown-menu {
+  display: flex;
+  justify-content: center;
+  border-bottom: #f6f6f6 5px solid;
+  cursor: default; /*마우스 모양 변하게한거 취소*/
+  padding: 20px 0px;
+  margin: 0 40px;
+  animation-name: slide_down;
+  animation-duration: 0.5s;
+
+}
+.slide_down {
+  transform: translateY(0);
+}
+
+@keyframes slide_down{
+  0% { transform: translateY(-300px);
+}
+  100% { transform: translateY(0); 
+}
+}
+@keyframes slide_up{
+  0% { transform: translateY(0);}
+  100% { transform: translateY(-300px); }
+}
+
+
+.dropdown-content{
+  padding: 0 40px;
+}
+.dropdown-title{
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  display: block;
+}
+.dropdown-content li{
+  color:gray;
+  font-size: 15px;
+}
+#eventimg {
+  height :150px;
+  width: 250px;
+}
