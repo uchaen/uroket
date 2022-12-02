@@ -1,12 +1,14 @@
 header {
   position: fixed;
   top: 0;
+  left:0;
   width: 100%;
   background-color: white;
   height: 65px;
   border-bottom: 1px lightgray solid;
   display: flex; /*내용물 좌우로 정렬*/
   align-items: center;
+  z-index: 3;
 }
 
 #left {
@@ -19,6 +21,8 @@ header {
   display: flex;
   align-items: center; /*상하로 중앙 정렬*/
   margin: 0 50px 0 320px; /*경계 바깥 여백 : 위 오 아 왼*/
+  z-index: 2;
+  position: relative;
 }
 #right {
   display: flex;
@@ -78,37 +82,36 @@ header {
 
 .dropdown-menu{
   display : none;
-  overflow: hidden;
-  /* transform: translateY(-300px); */
+  /* overflow: hidden; 이건뭔데 추가했더라 */
   position : fixed;
   top: 66px;
   left: 0;
   width: 100%;
   background-color: white;
-}
-.bigUnderbar:hover .dropdown-menu {
-  display: flex;
   justify-content: center;
   border-bottom: #f6f6f6 5px solid;
   cursor: default; /*마우스 모양 변하게한거 취소*/
   padding: 20px 0px;
   margin: 0 40px;
-  animation-name: slide_down;
-  animation-duration: 0.5s;
-
-}
-.slide_down {
-  transform: translateY(0);
 }
 
+.slide-down {
+  display: flex;
+  animation-name: slide_down; /*transform 있으면 z-index: 0 */
+  animation-duration: 0.3s;
+}
+.slide-up {
+  display: flex;
+  animation-name: slide_up; /*transform 있으면 z-index: 0 */
+  animation-duration: 0.3s;
+  animation-delay: 1s; /*엘리먼트가 로드되고 나서 언제 애니메이션이 시작될지*/
+}
 @keyframes slide_down{
-  0% { transform: translateY(-300px);
-}
-  100% { transform: translateY(0); 
-}
+  0% { transform: translateY(-300px); }
+  100% { transform: translateY(0); }
 }
 @keyframes slide_up{
-  0% { transform: translateY(0);}
+  0% { transform: translateY(0); }
   100% { transform: translateY(-300px); }
 }
 
@@ -128,4 +131,22 @@ header {
 #eventimg {
   height :150px;
   width: 250px;
+}
+
+
+.profile-menu {
+  display: none;
+  background-color: white;
+  position: fixed;
+  right : 190px;
+  top : 66px;
+  width: 300px;
+  border-bottom: solid 3px gray;
+  border-left: solid 3px gray;
+  border-right: solid 3px gray;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.profile:hover .profile-menu {
+  display: block;
 }
