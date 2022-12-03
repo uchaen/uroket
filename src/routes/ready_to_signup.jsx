@@ -24,7 +24,7 @@ class ReadyToSignup extends Component {
                     </div>
 
                     <div id="font17" style={{ margin: "30px 0 0 0"}}>
-                        이미 유로켓에 가입하셨나요? <Link to="/login">로그인</Link>
+                        이미 유로켓에 가입하셨나요? <Link style={{ color: "blueviolet" }} to="/login">로그인</Link>
                     </div>
                 </section>
             </main>

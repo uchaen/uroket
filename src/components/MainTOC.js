@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-class TOC extends Component {
+class MainTOC extends Component {
     render() {
         return (
-            <div className="TOC">
+            <div className="MainTOC">
                 <Banner></Banner>
                 <Market></Market>
                 <Best></Best>
@@ -174,4 +174,4 @@ class Reviews extends Component {
     }
 }
 
-export default TOC;
+export default MainTOC;

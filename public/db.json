@@ -18,5 +18,14 @@
       "user_name": "cc",
       "id": 3
     }
+  ],
+  
+  "product": [
+    {
+      "id": 1,
+      "product_name": "테스트상품1",
+      "product_price": 3000,
+      "seller_id": 1
+    }
   ]
 }

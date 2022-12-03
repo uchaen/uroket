@@ -8,7 +8,6 @@ header {
   border-bottom: 1px lightgray solid;
   display: flex; /*내용물 좌우로 정렬*/
   align-items: center;
-  z-index: 3;
 }
 
 #left {
@@ -21,8 +20,6 @@ header {
   display: flex;
   align-items: center; /*상하로 중앙 정렬*/
   margin: 0 50px 0 320px; /*경계 바깥 여백 : 위 오 아 왼*/
-  z-index: 2;
-  position: relative;
 }
 #right {
   display: flex;
@@ -82,7 +79,6 @@ header {
 
 .dropdown-menu{
   display : none;
-  /* overflow: hidden; 이건뭔데 추가했더라 */
   position : fixed;
   top: 66px;
   left: 0;
@@ -115,7 +111,7 @@ header {
   100% { transform: translateY(-300px); }
 }
 
-
+/* 드롭다운 메뉴 속 내용들 */
 .dropdown-content{
   padding: 0 40px;
 }
@@ -149,4 +145,9 @@ header {
 }
 .profile:hover .profile-menu {
   display: block;
+}
+.profile-menu div{
+  padding: 15px 20px;
+  border-top: solid 1px gray;
+  cursor: pointer; /*마우스 올리면 손가락으로 변하게*/
 }

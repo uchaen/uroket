@@ -47,9 +47,9 @@ class Header extends Component {
                     </div>
 
                     <div id="middle">
-                        <div className="bigUnderbar" onMouseOver={this.dropdownMenuOn} onMouseOut={this.dropdownMenuOff}>
+                        <Link className="link" to="/market"><div className="bigUnderbar" onMouseOver={this.dropdownMenuOn} onMouseOut={this.dropdownMenuOff}>
                             전세계상품
-                        </div>
+                        </div></Link>
                         <div> ㅣ </div>
                         <div className="bigUnderbar" onMouseOver={this.dropdownMenuOn} onMouseOut={this.dropdownMenuOff}>
                             셀러이신가요?
@@ -64,20 +64,20 @@ class Header extends Component {
                         <div id="right">
                             <img className="miniUnderbar" src="https://croket.s3.ap-northeast-2.amazonaws.com/icon/ChatCenteredText.png" alt="메세지" />
                             <img className="miniUnderbar" src="https://croket.s3.ap-northeast-2.amazonaws.com/icon/basket.png" alt="장바구니" />
-                            <div className="profile">
-                                <img className="miniUnderbar" src="assets/uroket-favicon.png" alt="프사" />
+                            <div className="profile" >
+                                <img className="miniUnderbar" style={{marginTop : "5px"}} src="assets/uroket-favicon.png" alt="프사" />
                                 <div className='profile-menu'>
                                     <div>{this.state.user_name} 님</div>
                                     <div>구매내역</div>
-                                    <div>셀러 활동 관리</div>
+                                    <Link to="/seller"><div>셀러 활동 관리</div></Link>
                                     <div onClick={this.logout} >로그아웃</div>
                                 </div>
                             </div>
                         </div>
                         :
                         <div>
-                            <Link to="/login" className="bigUnderbar" style={{ color: "blueviolet" }}>로그인</Link>
-                            <Link to="/ready_to_signup" className="bigUnderbar" style={{ color: "blueviolet" }}>회원가입</Link>
+                            <Link to="/login" className="link bigUnderbar" style={{ color: "blueviolet" }}>로그인</Link>
+                            <Link to="/ready_to_signup" className="link bigUnderbar" style={{ color: "blueviolet" }}>회원가입</Link>
                         </div>
                     }
                 </header>

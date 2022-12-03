@@ -1,0 +1,29 @@
+.Form {
+    display: block;
+    margin : 100px 0 0 200px;
+}
+
+
+.mini-title {
+   margin : 20px 0;
+}
+
+
+
+#register-btn {
+    background-color: blueviolet;
+    font-size: large;
+    font-weight:500;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 60px;
+    margin: 20px 0;
+    transition: all 0.5s linear; /*hover 시 천천히 변하게*/
+    cursor: pointer; /*마우스 올리면 손가락으로 변하게*/
+  }
+
+  #register-btn:hover {
+    transform: scale(1.1); /*확대*/
+  }

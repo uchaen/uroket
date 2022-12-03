@@ -8,6 +8,9 @@ import {BrowserRouter, Routes, Route,} from "react-router-dom";
 import Login from "./routes/login";
 import ReadyToSignup from "./routes/ready_to_signup";
 import Signup from "./routes/signup";
+import Market from './routes/market';
+import Seller from './routes/seller';
+import ProductForm from './routes/product_form';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +21,9 @@ root.render(
       <Route path="login" element={<Login />} />
       <Route path="ready_to_signup" element={<ReadyToSignup />} />
       <Route path="signup" element={<Signup />} />
+      <Route path="market" element={<Market />} />
+      <Route path="seller" element={<Seller />} />
+      <Route path="seller/product/form" element={<ProductForm/>}/>
     </Routes>
   </BrowserRouter>
   </React.StrictMode>

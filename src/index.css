@@ -1,5 +1,10 @@
 *{font-family: 'Noto Sans KR', sans-serif;}
 
+.link {
+  text-decoration: none;
+  color: black;
+}
+
 section {
   display: block; /*내용물 상하로 정렬*/
   text-align: center; /*중앙 정렬*/
